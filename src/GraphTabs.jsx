@@ -23,7 +23,7 @@ export default function GraphTabs() {
         <div className="flex-grow w-full overflow-auto">
           {selectedTab && (
             <iframe
-              src={`/graphs/${selectedTab}`}
+              src={`${import.meta.env.BASE_URL}graphs/${selectedTab}`}
               className="w-full border-none"
               style={{ height: "100vh", minWidth: "1400px", overflow: "auto" }}
             ></iframe>
